@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="../CSS_Fundamental/style.css" />
     <title>The Basic Language of the Web : HTML</title>
   </head>
 
   <body>
-    <header>
+    <header class="main-heading">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="blog.html">Blog</a>
@@ -16,11 +17,10 @@
     </header>
     <article>
       <header>
-        <p>Posted by Laura Jones on Monday, June 21st 2027</p>
-
+        <h2>The Basic Language of the Web: HTML</h2>
         <img src="laura-jones.jpg" width="50" height="50" />
 
-        <h2>The Basic Language of the Web: HTML</h2>
+        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
         <img src="post-img.jpg" width="500" height="200" />
       </header>
 
@@ -53,7 +53,7 @@
 
       <p>In <b>HTML</b>, each element is made up of 3 parts:</p>
       <ol>
-        <li>The opening tag</li>
+        <li class="first-line">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -63,7 +63,7 @@
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML"
           target="_blank"
-          >MDN web stores
+          >MDN web store
         </a>
       </p>
 
@@ -75,7 +75,9 @@
       </p>
 
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-line">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
@@ -90,7 +92,7 @@
     <aside>
       <h4>Related posts</h4>
 
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="related-1.jpg"
@@ -99,12 +101,12 @@
             height="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p><strong>By Jonass Schmedtmann</strong></p>
+          <p class="related-authors"><strong>By Jonass Schmedtmann</strong></p>
         </li>
         <li>
           <img src="related-2.jpg" alt="Thunderstorm" width="75" height="75" />
           <a href="#">The Unknown Powers of CSS</a>
-          <p><strong>By Jim Dillon</strong></p>
+          <p class="related-authors"><strong>By Jim Dillon</strong></p>
         </li>
         <li>
           <img
@@ -114,11 +116,13 @@
             height="75"
           />
           <a href="#">Why Javascript is Awesome </a>
-          <p><strong>By Matilda</strong></p>
+          <p class="related-authors"><strong>By Matilda</strong></p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+    <footer>
+      <p class="Copyright">Copyright &copy; 2027 by The Code Magazine</p>
+    </footer>
   </body>
 </html>
