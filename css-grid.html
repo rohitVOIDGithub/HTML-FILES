@@ -34,14 +34,30 @@
 
       .container--1 {
         /* STARTER */
+
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
-      }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 600px;
 
+        column-gap: 20px;
+        row-gap: 40px;
+
+        display: none;
+      }
+      .el--8 {
+        grid-column: 2 / 3;
+        grid-row: 1 / span 2;
+      }
+      .el--2 {
+        grid-row: 2;
+      }
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
@@ -53,6 +69,19 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 35px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
